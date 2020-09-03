@@ -1,9 +1,13 @@
 terraform {
-  required_version = ">= 0.12"
+  required_version = ">= 0.12.26"
+
+  required_providers {
+    random = "~> 2.3"
+  }
 }
 
-provider "aws" {
-  region = var.aws_region
-}
+resource "random_pet" "pet" {}
 
-resource "aws_eip" "default" {}
+output "pet" {
+  value = random_pet.pet.id
+}
