@@ -9,6 +9,8 @@ terraform {
   }
 }
 
+resource "aws_eip" "foo" {}
+
 resource "random_pet" "pet" {}
 resource "random_pet" "other_pet" {}
 
