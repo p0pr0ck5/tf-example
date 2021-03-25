@@ -9,6 +9,8 @@ terraform {
   }
 }
 
+resource "null_resource" "foo" {}
+
 data "yaml_to_json" "doc" {
   input = <<EOF
 foo: 123
