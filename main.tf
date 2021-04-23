@@ -2,6 +2,10 @@ terraform {
   required_version = ">= 0.13.5"
 
   required_providers {
+    null = {
+      version = "~> 2.0"
+    }
+
     yaml = {
       version = "2.1"
       source = "providers.local/myorg/yaml"
