@@ -3,6 +3,7 @@ terraform {
 
   required_providers {
     yaml = ">= 2.0"
+    null = "~> 2.0"
   }
 }
 
@@ -18,6 +19,8 @@ columns:
 EOF
 
 }
+
+resource "null_resource" "null" {}
 
 output "json" {
   value = data.yaml_to_json.doc.output
