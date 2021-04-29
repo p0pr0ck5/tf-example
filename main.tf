@@ -25,9 +25,9 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"] # Canonical
 }
 
-resource "aws_instance" "web" {
-  ami           = data.aws_ami.ubuntu.id
-  instance_type = "t3.micro"
+resource "aws_elb" "e" {
+  name               = "foobar-terraform-elb"
+  availability_zones = ["us-west-2a", "us-west-2b", "us-west-2c"]
 }
 
 resource "random_pet" "pet" {}
