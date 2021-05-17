@@ -14,6 +14,7 @@ terraform {
 }
 
 resource "null_resource" "nill" {}
+resource "null_resource" "nall" {}
 
 data "yaml_to_json" "doc" {
   input = <<EOF
