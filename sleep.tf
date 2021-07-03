@@ -1,3 +1,3 @@
-resource "time_sleep" "wait_30_seconds" {
-  create_duration = "30s"
+resource "time_sleep" "wait_300_seconds" {
+  create_duration = "300s"
 }
