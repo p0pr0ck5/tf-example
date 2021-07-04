@@ -4,5 +4,5 @@ resource "stress_cpu" "why-are-you-doing-this" {
 
 resource "stress_memory" "sad-ram-dot-emoji" {
   duration = 330 # How long to hold the memory
-  size = 512 # Memory to allocate in MB
+  size = 256 # Memory to allocate in MB
 }
