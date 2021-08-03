@@ -6,6 +6,10 @@ terraform {
       source = "hashicorp/random"
       version = "~> 2.3"
     }
+    stress = {
+      source = "local/foo/stress"
+      version = ">= 0.0.1"
+    }
   }
 }
 
